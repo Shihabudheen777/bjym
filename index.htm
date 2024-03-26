@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+y
+
+    <title>Bharatiya Janata Yuva Morcha</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #138808 5%, #FF9933 40%); 
+            color: #fff;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+            flex: 1;
+            text-align: center;
+        }
+
+        .number {
+            font-size: 24px;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 90vh;
+            border: none;
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="BJP Logo">
+        <div class="heading">BHARATIYA JANATA YUVA MORCHA DELHI</div>
+        <div class="number">
+			<script type="text/javascript" src="//counter.websiteout.net/js/7/10/0/0"></script>
+
+		</div>
+    </header>
+    <div class="container">
+		<h1 style="text-align:center;"> WHY MODI ? </h1>
+    </div>
+    <div>
+<!-- <script>
+  $('.carousel').carousel({
+  interval: 2000
+})
+</script> -->
+<div class="slide-container">
+  <div class="slide fade">
+    <!-- <div class="numText">1/3</div> -->
+    <img src="img-11.png" style="width:100%;" alt="Slide 1">
+    
+  </div>
+
+  <div class="slide fade">
+ 
+    <img  src="img-22.png" style="width:100%;" alt="Slide 2">
+   
+  </div>
+
+  <div class="slide fade">
+   
+    <img src="img-33.png" style="width:100%;" alt="Slide 3">
+    
+
+  </div>
+  <div class="slide fade">
+   
+    <img src="img-44.png" style="width:100%;" alt="Slide 3">
+    
+
+  </div>
+      <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+    <a class="next" onclick="plusSlide(1)">&#10095</a>
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+</div>
+
+        <!-- <div class="row">
+            <div class="column">
+              <img src="img-1.jpeg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img-2.jpg"Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img-3.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div> -->
+    </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlide(n) {
+      showSlides((slideIndex += n));
+    }
+    
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+    
+    function showSlides (n){
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+    
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++){
+            dots[i].className = dots[i].className.replace("active","");
+        }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className+= " active";
+    }
+    
+    
+    
+    function slideTime(n){
+     n=1
+     showSlides(slideIndex += n);
+     }
+     
+    setInterval(slideTime, 4000);
+    
+  </script>
+    
+
+
+</body>
+
+</html>
